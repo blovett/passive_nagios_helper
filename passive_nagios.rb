@@ -84,16 +84,16 @@ services.each_key do |s|
                   "-C", "\'#{command}\'"]
   command_str = "#{nagios_wrapper} #{command_opts.join(" ")}"
 
-  verbose command_str
+  verbose "Running: #{command_str}"
   result = %x{#{command_str}}
   exit_code = $?
 
   if exit_code.to_i > 0
-    puts "#{Time.now}: had a problem while running service check #{s}"
+    STDERR.puts "#{Time.now}: had a problem while running service check #{s}"
     fail_count += 1
   else
     success_count += 1
   end
 end
 
-verbose "Completed run.  #{success_count} were successful; #{fail_count} failed."
+puts "Reporting done. #{success_count} were successful; #{fail_count} failed."
