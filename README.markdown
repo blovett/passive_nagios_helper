@@ -4,7 +4,7 @@ For those people that have many passive nagios checks to run, this is for you.
 
 ## Example config:
 
-<pre>>
+<pre>
 :services:
   :mysql:
     :description: MYSQL
