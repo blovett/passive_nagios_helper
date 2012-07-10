@@ -1,0 +1,10 @@
+:services:
+  :mysql:
+    :description: MYSQL
+    :command: check_mysql
+  :mysql_slave:
+    :description: MYSQL_SLAVE
+    :command: check_mysql
+    :args: -S
+:config:
+  :nagios: nagios.example.com
