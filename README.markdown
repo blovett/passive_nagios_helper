@@ -34,7 +34,3 @@ Mon Jul 09 22:01:04 -0700 2012: had a problem while running service check mysql
 Mon Jul 09 22:01:04 -0700 2012: had a problem while running service check mysql_slave
 [Mon Jul 09 22:01:04 -0700 2012]: Completed run.  2 were successful; 0 failed.
 </pre>
-
----
-
-
